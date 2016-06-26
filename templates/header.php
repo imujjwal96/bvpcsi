@@ -96,10 +96,10 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="myModal-label">Contact Us</h4>
                     </div>
+                    <form role="form" class="form-horizontal" action="contact.php" method="POST">
                     <div class="modal-body">
                         <div class = "row">
                             <div class="col-xs-12">
-                                <form role="form" class="form-horizontal" action="contact.php" method="POST">
                                     <div class="form-group">
                                         <label for="name" class="control-label col-sm-2 hidden-xs hidden-sm">Name:</label>
                                         <div class="col-md-9 ">
@@ -115,7 +115,7 @@
                                     <div class="form-group">
                                         <label for="number" class="control-label col-sm-2 hidden-xs hidden-sm">Phone:</label>
                                         <div class="col-md-9 ">
-                                            <input type="text" placeholder="Phone Number" name="phone" class="form-control" id="phone" required>
+                                            <input type="text" placeholder="Subject" name="subject" class="form-control" id="subject" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -124,7 +124,6 @@
                                         <textarea class="form-control" placeholder="Message" name = "message"></textarea>
                                         </div>
                                     </div>
-                                </form>
                             </div>
                         </div>
                     </div>

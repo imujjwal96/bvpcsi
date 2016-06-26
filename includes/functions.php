@@ -1,12 +1,11 @@
 <?php
-
     /*****************************************************
     * functions.php                                      * 
     * Contains all the functions required in the project *
     *                                                    *
     *****************************************************/
-   
-    
+
+
     /****************************************************
     * Redirects user to a location                      *
     * which can be a URL or a relative path to a page   *
@@ -43,8 +42,7 @@
             header("Location: $protocol://$host$path/$location");
         }
     }
-    
-    
+
     /************************************************************
     * Renders a template if it exists, by including the header, *
     * footer and the template                                   *
@@ -73,6 +71,46 @@
             trigger_error("Invalid template: $template", E_USER_ERROR);
         }
     }
-    
-   
+    /**
+     * Function to provide Mailing Feature 
+     */
+    function mailer($from, $from_name, $subject, $body, $alt_body, $to, $name)
+    {
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = SMTP_HOST;
+        $mail->SMTPAuth = true;
+        $mail->Username = SMTP_NAME;
+        $mail->Password = SMTP_PSWD;
+        $mail->Port = SMTP_PORT;
+        $mail->setFrom($from, $from_name);
+        $mail->addAddress($to, $name);
+        $mail->isHTML(true); 
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+        $mail->AltBody = $alt_body;
+        $mail->send();
+    } 
+    /**
+     * Function to implement ContactUs Feature
+     */
+    function contactus($from, $from_name, $subject, $message) { 
+        $to = "ujjwalbhardwaj@bvpcsi.in";
+        $name = "Ujjwal Bhardwaj";
+        $body = '<html>
+                    <body>
+                        <h1>' . $subject . '</h1>
+                        <p>' . $message . '</p>
+                        <p><strong>' . $from_name . '</strong></p>
+                    </body>   
+                 </html>';
+        mailer($from, $from_name, $subject, $body, $message, $to, $name);
+    }
+    /**
+    * Checks e-mail address
+    */
+    function email_valid($email)
+    {
+        return (bool) filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
 ?>
