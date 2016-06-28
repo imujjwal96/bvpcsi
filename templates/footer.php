@@ -1,30 +1,51 @@
-        </div>
-        <!-- Footer of the Page -->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="col-md-4 col-xs-12" style="display:inline-block; text-align:center; padding-top: 20px;">
-                    
-                </div>
-                <div class="col-xs-6 col-md-4" style="display:inline-block; text-align:center; padding-top: 20px;">
-                    <img class = "img-responsive" width = "90%" src = "img/bvp.png" alt = "BVP" />
-                </div>
-                <div class="col-xs-3 col-md-2" style="display:inline-block; text-align:center">
-                    <h1></h1>
+<!-- Footer of the Page -->
 
-                </div>
-                <div class="col-xs-3 col-md-2" style="display:inline-block; float:right">
-                    <h1></h1>
-                    <img class = "img-responsive"  src = "img/csi.png" alt = "Computer Society of India" />
-                </div>
+<div class="container-fluid text-col" style="background-color: #000e1b;">
+	<div class="col-md-6">
+	<div class="row">
+	<div class="col-md-6  text-box" style="color: #FFF">
+	<h5>EMAIL SIGN UP</h5>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-8 text-box" style="color: #FFF; ">
+	<h4 style="font-weight:100;">Get the latest news, events and schedules for workshops from the team.</h4>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-6 input-box" style="color: #FFF; ">
+	<input class="input_text_new" type="text" name="email" placeholder="Enter your Email Address"></input>
+	</div>
+	<div class="col-md-6 input-box" style="color: #FFF; ">
+	<input class="input_btn_new" type="button" name="signup" value="SIGN UP"/>
+	</div>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="row">
+	<div class="col-md-6  text-box" style="color: #FFF">
+	<h5>Connect Us</h5>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-12 connect-box" style="color: #FFF">
+	<a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	<a href="https://www.plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+	<a href="https://www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+	</div>	
+	</div>
+	</div>
+	</div>
 
-                <div class="col-xs-3" style="display:inline-block; text-align:center">
+	<div class="container-fluid footer" style="background-color: #fff;">
+	<div class="row">
+	
+	<a href="https://www.bvpcsi.in"><img src="img/bvpcsilogo-black.png" style="height:10vh" /></a>
+	<span style="float: right;padding: 20px 0px;">Made with <i class="fa fa-heart" aria-hidden="true" style="color: #FF2D50"></i> by Team</span>
+	</div>
+	</div>
 
-                </div>
-            </div>
-            <hr />
-            <h4 style="text-align:center">&copy; 2016 BVPCSI. All Rights Reserved</h4>
-        </footer>
-        <script src="Scripts/jquery-2.1.4.min.js"></script>
-        <script src="Scripts/bootstrap.min.js"></script>
-    </body>
+	<script src="Scripts/jquery-2.1.4.min.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
+</body>
 </html>
