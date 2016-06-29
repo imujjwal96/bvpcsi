@@ -13,6 +13,8 @@
 * Webserver must be public.
 * There must a be MySQL database created with a user who has full rights to that database.
 
+
+Note : You'd need to set 'public_html' as the document root of the server.
 bvpcsi can now be used.
 
-Report Bugs: https://github.com/fossasia/engelsystem/issues
+Report Bugs: https://github.com/imujjwal96/bvpcsi/issues
