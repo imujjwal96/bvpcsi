@@ -31,7 +31,10 @@
             }
             $host = $_SERVER["HTTP_HOST"];
             header("Location: $protocol://$host$location");
-        }
+        }/*
+		
+			ISSUE HERE
+		
         // When the location inside the website given is relative
         else
         {
@@ -39,8 +42,9 @@
             $protocol = (isset($_SERVER["HTTPS"])) ? "https" : "http";
             $host = $_SERVER["HTTP_HOST"];
             $path = rtrim(dirname($_SERVER["PHP_SELF"]), "/\\");
-            header("Location: $protocol://$host$path/$location");
-        }
+            header("Location: $p	otocol://$host$path/$location");
+        }*/
+		
     }
 
     /************************************************************
