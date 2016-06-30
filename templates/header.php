@@ -37,13 +37,49 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="pull-left active"><a href="#">HOME</a></li>
-					<li class=""><a href="#">COUNCIL</a></li>
-					<li><a href="#">GALLERY</a></li>
-					<li><a href="#">EVENTS</a></li>
-					<li><a href="#">CONTACT US</a></li>	
-					<li class="social pull-right"><a href="#">LOGIN</a></li>
+				<?php
+				$page = $_SERVER["PHP_SELF"];
+				$index_active = "";
+				$events_active = "";
+				$council_active = "";
+				$gallery_active = "";
+				$login_active = "";
+				$nav_color_theme = "";
+                $footer_color_theme = "";
+				if(strcmp($page, "/bvpcsi/public_html/index.php") == 0){
+				 $index_active = "active";
+				 $nav_color_theme = "color-home";
+				 $footer_color_theme = "footer-color-home";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/council.php") == 0){
+				 $council_active = "active";
+				 $nav_color_theme = "color-council";
+				 $footer_color_theme = "footer-color-council";
+				 
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/gallery.php") == 0){
+				 $gallery_active = "active";
+				 $nav_color_theme = "color-gallery";
+				 $footer_color_theme = "footer-color-gallery";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/events.php") == 0){
+				 $events_active = "active";
+				 $nav_color_theme = "color-events";
+				 $footer_color_theme = "footer-color-events";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/login.php") == 0){
+				 $login_active = "active";
+				 $nav_color_theme = "color-login";
+				 $footer_color_theme = "footer-color-home";
+				 }
+				?>
+				<ul class="nav navbar-nav <?php echo $nav_color_theme?>">
+					<li class="pull-left <?php echo $index_active?>"><a href="index.php">HOME</a></li>
+					<li class="<?php echo $council_active?>"><a href="council.php">COUNCIL</a></li>
+					<li class="<?php echo $gallery_active?>"><a href="gallery.php">GALLERY</a></li>
+					<li class="<?php echo $events_active?>"><a href="events.php">EVENTS</a></li>
+					<li><a href="#" data-toggle = "modal" data-target = "#contactmodal">CONTACT US</a></li>	
+					<li class="social pull-right <?php echo $login_active?>"><a href="login.php">LOGIN</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
