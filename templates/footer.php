@@ -1,6 +1,25 @@
 <!-- Footer of the Page -->
-
-<div class="container-fluid text-col" style="background-color: #000e1b;">
+<?php
+				$page = $_SERVER["PHP_SELF"];
+				$footer_color_theme = "";
+				if(strcmp($page, "/bvpcsi/public_html/index.php") == 0){
+				 $footer_color_theme = "footer-color-home";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/council.php") == 0){
+				 $footer_color_theme = "footer-color-council"; 
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/gallery.php") == 0){
+				 $footer_color_theme = "footer-color-gallery";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/events.php") == 0){
+				 $footer_color_theme = "footer-color-events";
+				 }
+				if(strcmp($page, "/bvpcsi/public_html/login.php") == 0){
+				 $footer_color_theme = "footer-color-home";
+				 }
+				
+?>
+<div class="container-fluid text-col <?php echo $footer_color_theme?>" style="">
 	<div class="col-md-6">
 	<div class="row">
 	<div class="col-md-6  text-box" style="color: #FFF">
