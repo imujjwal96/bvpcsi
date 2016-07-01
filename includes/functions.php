@@ -117,4 +117,80 @@
     {
         return (bool) filter_var($email, FILTER_VALIDATE_EMAIL);
     }
+    /*******************************************************
+    * Executes SQL statement                               *
+    * taking the statement as an argument                  *
+    * If it is a SELECT command, Fetch the output an store *
+    * it in an associative array, else redirects           *
+    *******************************************************/
+    function query(/* $sql [, ... ] */)
+    {
+        $sql = func_get_arg(0);
+        $parameters = array_slice(func_get_args(), 1);
+        static $handle;
+        if (!isset($handle))
+        {
+            try
+            {
+                $handle = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
+                $handle->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); 
+            }
+            catch (Exception $e)
+            {
+                trigger_error($e->getMessage(), E_USER_ERROR);
+                exit;
+            }
+        }
+        $statement = $handle->prepare($sql);
+        if ($statement === false)
+        {
+            trigger_error($handle->errorInfo()[2], E_USER_ERROR);
+            exit;
+        }
+        $results = $statement->execute($parameters);
+        if ($results !== false)
+        {
+            return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            return false;
+        }
+    }
+    /**
+     * Function to Separate Date from the SQL DATETIME format    
+     */
+    function date_separator($datetime = array()) 
+    {
+        $date = explode("-", (explode(" ", $datetime)[0]));
+        return array(
+            "day" => $date[2],
+            "month" => $date[1],
+            "year" => $date[0]
+        );
+    }
+    /**
+     * Function to Separate Time from the SQL DATETIME format    
+     */
+    function time_separator($datetime = array()) 
+    {
+        $time = explode(":", (explode(" ", $datetime)[1]));
+        return array(
+            "hour" => $time[0],
+            "minute" => $time[1],
+            "second" => $time[2]
+        );
+    }
+    /**
+     * Function to Compare two Dates
+     */
+    function date_compare($date1, $date2) 
+    {
+        if ($date1["day"] == $date2["day"] && $date1["month"] == $date2["month"] && $date1["year"] == $date2["year"]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 ?>
