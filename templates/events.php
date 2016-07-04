@@ -25,10 +25,10 @@
 								<h4 class="desc">' . $event["description"] . '</h4>
 								<h3 class="date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>';
 				if (date_compare($startdate, $enddate)) {
-					echo $startdate["day"] . '.'. $startdate["month"] . '.' . $startdate["year"] .  '</h3>';
+					echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"] .  '</h3>';
 				}
 				else {
-					echo $startdate["day"] . '.'. $startdate["month"] . '.' . $startdate["year"] .  ' - ' . $enddate["day"] . '.'. $enddate["month"] . '.' . $enddate["year"] .'</h3>';
+					echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"] .  ' - ' . $enddate["day"] . ' '. $enddate["month"] . ' ' . $enddate["year"] .'</h3>';
 				}
 				echo '		</div>
 						</div>
@@ -45,10 +45,10 @@
 							<h4 class="desc"' . $event["description"] . '</h4>
 							<h3 class="date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>';
 				if (date_compare($startdate, $enddate)) {
-					echo $startdate["day"] . '.'. $startdate["month"] . '.' . $startdate["year"] .  '</h3>';
+					echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"] .  '</h3>';
 				}
 				else {
-					echo $startdate["day"] . '.'. $startdate["month"] . '.' . $startdate["year"] .  ' - ' . $enddate["day"] . '.'. $enddate["month"] . '.' . $enddate["year"] .'</h3>';
+					echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"] .  ' - ' . $enddate["day"] . ' '. $enddate["month"] . ' ' . $enddate["year"] .'</h3>';
 				}
 				echo '		</div>
 						</div>
