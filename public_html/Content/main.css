@@ -1,18 +1,72 @@
-
-
-#cool
-{
+body {
+    background-color: #eeeeee;
+}
+#cool {
     background-color: black;
 }
-
-.ujjwal img {
-  height: 200px;
-  width: 200px;
-  margin: 0px auto;
-  -webkit-border-radius: 100px 100px 100px 10px;
-  -moz-border-radius: 100px;
-  border-radius: 100px 10px 100px 10px;
-  -moz-border-radius-bottomleft: 10px;
+.bg-light-gray {
+  background-color: #eeeeee;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #ff4242;
+}
+.team-member img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -21,24 +75,12 @@
   -ms-transition: all .7s;
   -o-transition: all .7s;
   transition: all .7s;
-  border: 1px solid #222222;
 }
-.ujjwal {
-      text-align:center;
-}
-
-.ujjwal img:hover{
+.team-member img:hover{
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     filter: grayscale(0);
 }
-
-/* ===============================
-
-             New CSS 
-
-================================== */
-
 .color-home>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
   border-color: #5FB2FF;
 }
@@ -177,8 +219,7 @@ color: #fff;
 font-size: 35px;
 margin: 0px 10px;
 }
-.footer
-{
+.footer {
   padding:10px 50px;
   color: #565656;
   font-family: Roboto;
@@ -221,8 +262,6 @@ margin: 0px 10px;
     font-weight: 600;
     text-transform: uppercase;
 }
-
- 
  @media (max-width: 768px){
   .pull-left {
     float: none !important;
@@ -240,12 +279,11 @@ margin: 0px 10px;
   padding: 12px;
   border-bottom: 1px solid #f0f0f0;
  }
- .navbar-nav > li > a{
+ .navbar-nav > li > a {
  font-weight: 500;
  font-size: 15px;
  }
- .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus 
-{ 
+ .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { 
   color: #9fd7e0;
   background: #fff;
   border-bottom-width: 0px;
@@ -258,7 +296,4 @@ margin: 0px 10px;
   border-bottom-width: 0px;
   border-bottom-color: #9fd7e0;
   border-bottom-style: solid;
-
-}
-   
-}
+}}
