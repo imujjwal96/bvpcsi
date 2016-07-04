@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>BVPCSI</title>
+	<title><?php if (isset($title)) echo  $title . ' | '; ?> BVPCSI</title>
 	<meta charset = "utf-8">
 	<meta name="Description" content="BVPCSI" />
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
