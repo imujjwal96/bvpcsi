@@ -1,4 +1,14 @@
-<section id="portfolio" class="bg-light-gray">
+<div class="container-fluid text-col" style="background-color: #ff4242;">
+	<div class="row">
+	<div class="col-md-6 text-box" style="color: #fff">	
+	<h1>Gallery</h1>
+	</div>
+	<div class="col-md-6 text-box" style="color: #fff">
+	<h3>We are pretty active in hosting events and encouraging students to participate in those events</h3>
+	</div>
+	</div>
+	</div>
+<section id="portfolio" class="bg-light-gray margin-top-20">
     <div class = "container">
         <div class = "row">
             <div class = "col-md-3 portfolio-item">

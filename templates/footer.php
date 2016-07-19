@@ -1,20 +1,22 @@
 <!-- Footer of the Page -->
 <?php
 				$page = $_SERVER["PHP_SELF"];
+			
 				$footer_color_theme = "";
-				if(strcmp($page, "/bvpcsi/public_html/index.php") == 0){
+				
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/index.php") == 0){
 				 $footer_color_theme = "footer-color-home";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/council.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/council.php") == 0){
 				 $footer_color_theme = "footer-color-council"; 
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/gallery.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/gallery.php") == 0){
 				 $footer_color_theme = "footer-color-gallery";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/events.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/events.php") == 0){
 				 $footer_color_theme = "footer-color-events";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/login.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/login.php") == 0){
 				 $footer_color_theme = "footer-color-home";
 				 }
 				
@@ -66,6 +68,9 @@
 
 	<script src="Scripts/jquery-2.1.4.min.js"></script>
 	<script src="Scripts/bootstrap.min.js"></script>
+	<!-- TimeLine -->
+	<script src="Scripts/main.js"></script> <!-- Resource jQuery -->
+	<!-- /Timeline -->
 	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>

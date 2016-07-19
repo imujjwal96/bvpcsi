@@ -23,6 +23,9 @@ body {
 .team-member p {
   margin-top: 0;
 }
+.margin-top-20{
+margin-top:20px;
+}
 section {
   padding: 100px 0;
 }
@@ -84,14 +87,26 @@ ul.social-buttons li a:active {
 .color-home>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
   border-color: #5FB2FF;
 }
-.color-events>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
+.color-gallery>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
   border-color: #ff4242;
+}
+.color-council>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
+  border-color: #ffbc00;
+}
+.color-events>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
+  border-color: #33dc86;
 }
 .footer-color-home{
   background-color:#000e1b; 
 }
-.footer-color-events{
+.footer-color-gallery{
   background-color:#ff4242; 
+}
+.footer-color-council{
+  background-color:#ffbc00; 
+}
+.footer-color-events{
+  background-color:#33dc86; 
 }
 .navbar-nav {
   width: 100%;
@@ -157,15 +172,22 @@ padding: 0px 16px;
   padding:10px 50px;
   color: #565656;
   font-family: Roboto;
+  line-height: 1.2;
 
 }
 .text-box h1{
-    font-weight: 600;
+   font-size:40px;
+ font-weight: 600;
+}
+.text-box h3{
+   font-size:32px;
+ font-weight: 400;
 }
 .text-box h4{
+  font-size:26px;
   font-weight: 400;
 }
-.text-box.center h1,.text-box.center h4{
+.text-box.center h1,.text-box.center h4,.text-box.center h3{
   text-align: center;
   text-align: -webkit-center;
 }
@@ -181,6 +203,9 @@ height: 25vh;
   padding: 12px;
 }
 .home-background-content h3{
+font-family: Roboto,sans-serif;
+	font-size:28px;
+	font-weight:200;
   text-align: center;
   text-align: -webkit-center;
 }
