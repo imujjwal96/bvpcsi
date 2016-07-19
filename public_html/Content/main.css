@@ -107,6 +107,12 @@ padding: 0px 16px;
     background-position: 50% center;
     height: 80vh;
 }
+.home-background-content h3{
+	font-family: Roboto,sans-serif;
+	font-size:28px;
+	font-weight:200;
+	}
+
 .text-col{
      padding: 100px 20px 100px 20px;
     overflow: hidden;
@@ -114,13 +120,15 @@ padding: 0px 16px;
 .text-box{
   padding:10px 50px;
   color: #565656;
-  font-family: Roboto;
+ font-family: Roboto;
 
 }
 .text-box h1{
-    font-weight: 600;
+ font-size:28px;
+ font-weight: 600;
 }
 .text-box h4{
+  font-size:20px;
   font-weight: 400;
 }
 .text-box.center h1,.text-box.center h4{
@@ -183,45 +191,6 @@ margin: 0px 10px;
   color: #565656;
   font-family: Roboto;
  }
-.event_col{
-  padding:0px;
-  overflow: hidden;
-}
-.event_showcase_image{
-  width:100%;
-  height:90vh;
-  background-size:cover;
-  background-position: 50% center;
-}
-.event_showcase_text{
-   padding:10px 50px !important;
-   font-family: raleway;
-}
-.event_showcase_text >.title {
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 10px;
-    font-family: roboto;
-    background-color: #ff4242;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.event_showcase_text >.desc {
-  line-height: 25px;
-}
-.event_showcase_text >.date {
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 10px;
-    font-family: roboto;
-    border-bottom: 10px solid;
-    border-color: #ff4242;
-    color: #686868;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
  
  @media (max-width: 768px){
   .pull-left {
