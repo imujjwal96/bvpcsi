@@ -65,6 +65,9 @@
 	</div>
 
 	<script src="Scripts/jquery-2.1.4.min.js"></script>
+	<!-- TimeLine -->
+	<script src="Scripts/main.js"></script> <!-- Resource jQuery -->
+	<!-- /Timeline -->
 	<script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>

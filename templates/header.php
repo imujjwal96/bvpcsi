@@ -20,6 +20,10 @@
 	<link href="Content/main.css" rel="stylesheet" />
 	<link rel="shortcut icon" href="img/csi.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- Timlimne -->
+	<link rel="stylesheet" href="Content/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="Content/style.css"> <!-- Resource style -->
+	<script src="Scripts/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
 
