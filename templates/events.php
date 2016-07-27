@@ -84,30 +84,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		';
+			</div>';
 		$i++;
-
-
-
-
-		/*echo '	<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture">
-					<img src="img/settings_icon.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-				<div class="cd-timeline-content">
-					<h2>' . $event["event_name"] . '</h2>
-					<p>' . $event["description"] . '</p>
-					<a href="#portfolioModal1" class="portfolio-link cd-read-more" data-toggle="modal">Read more</a>
-					<span class="cd-date">';
-		if (date_compare($startdate, $enddate)) {
-			echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"];
-		}
-		else {
-			echo $startdate["day"] . ' '. $startdate["month"] . ' ' . $startdate["year"] .  ' - ' . $enddate["day"] . ' '. $enddate["month"] . ' ' . $enddate["year"] ;
-		}
-		echo '</span>
-						</div> <!-- cd-timeline-content -->
-					</div> <!-- cd-timeline-block -->';*/
 	}
 ?>
