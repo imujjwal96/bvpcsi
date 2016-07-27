@@ -26,6 +26,7 @@
 	<!-- Timlimne -->
 	<link rel="stylesheet" href="Content/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="Content/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="Content/agency.css"> <!-- CSS reset -->
 	<script src="Scripts/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>

@@ -208,4 +208,10 @@
         }
     }
 
+    function slash_string($string) {
+        $string = str_replace(" ", "", $string);
+        $string = strtolower($string);
+        return $string;
+    }
+
 ?>
