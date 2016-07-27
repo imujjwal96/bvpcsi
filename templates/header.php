@@ -23,6 +23,10 @@
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<!-- Timlimne -->
+	<link rel="stylesheet" href="Content/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="Content/style.css"> <!-- Resource style -->
+	<script src="Scripts/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
 
@@ -49,28 +53,28 @@
 				$login_active = "";
 				$nav_color_theme = "";
                 $footer_color_theme = "";
-				if(strcmp($page, "/bvpcsi/public_html/index.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/index.php") == 0){
 				 $index_active = "active";
 				 $nav_color_theme = "color-home";
 				 $footer_color_theme = "footer-color-home";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/council.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/council.php") == 0){
 				 $council_active = "active";
 				 $nav_color_theme = "color-council";
 				 $footer_color_theme = "footer-color-council";
 				 
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/gallery.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/gallery.php") == 0){
 				 $gallery_active = "active";
 				 $nav_color_theme = "color-gallery";
 				 $footer_color_theme = "footer-color-gallery";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/events.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/events.php") == 0){
 				 $events_active = "active";
 				 $nav_color_theme = "color-events";
 				 $footer_color_theme = "footer-color-events";
 				 }
-				if(strcmp($page, "/bvpcsi/public_html/login.php") == 0){
+				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/login.php") == 0){
 				 $login_active = "active";
 				 $nav_color_theme = "color-login";
 				 $footer_color_theme = "footer-color-home";

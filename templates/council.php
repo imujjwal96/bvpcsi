@@ -1,4 +1,14 @@
-<div class = "container">
+<div class="container-fluid text-col" style="background-color: #ffbc00;">
+	<div class="row">
+	<div class="col-md-6 text-box" style="color: #fff">	
+	<h1>Team and Members</h1>
+	</div>
+	<div class="col-md-6 text-box" style="color: #fff">
+	<h3>We are pretty active in hosting events and encouraging students to participate in those events</h3>
+	</div>
+	</div>
+</div>
+<div class = "container margin-top-20">
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
