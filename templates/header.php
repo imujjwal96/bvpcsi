@@ -86,7 +86,7 @@
 					<li class="<?php echo $council_active?>"><a href="council.php">COUNCIL</a></li>
 					<li class="<?php echo $gallery_active?>"><a href="gallery.php">GALLERY</a></li>
 					<li class="<?php echo $events_active?>"><a href="events.php">EVENTS</a></li>
-					<li><a href="#" data-toggle = "modal" data-target = "#contactmodal">CONTACT US</a></li>	
+					<li><a href="#">BLOG</a></li>
 					<li class="social pull-right <?php echo $login_active?>"><a href="login.php">LOGIN</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->

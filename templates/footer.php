@@ -26,6 +26,36 @@
 		<div class="fb-page" data-width="500" data-height="300" data-href="https://www.facebook.com/bvcoecsi" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bvcoecsi" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bvcoecsi">BVP CSI</a></blockquote></div>
 	</div>
 	<div class="col-md-6">
+		<h1 style="font-size: 30px; padding-bottom: 10px">Contact Us</h1>
+		<form role="form" class="form-horizontal" action="contact.php" method="POST">
+			<div class="form-group">
+				<div class="col-md-9 ">
+					<input placeholder="Name" name="name" class="form-control" id="name" required="" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-9 ">
+					<input placeholder="Email-Address" name="email" class="form-control" id="email" required="" type="mail">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-9 ">
+					<input placeholder="Phone Number" name="phone" class="form-control" id="phone" required="" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-9">
+					<textarea class="form-control" placeholder="Message" name="message"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-9">
+					<input type="submit" name="submit" value="Send Message" class="btn btn-primary" />
+				</div>
+			</div>
+		</form>
+
+
 		<div class="row">
 			<div class="col-md-6  text-box" style="color: #FFF">
 				<h5>Connect Us</h5>
