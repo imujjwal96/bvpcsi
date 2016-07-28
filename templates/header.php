@@ -54,31 +54,37 @@
 				$login_active = "";
 				$nav_color_theme = "";
                 $footer_color_theme = "";
-				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/index.php") == 0){
+			
+				if(strcmp($page, "/index.php") == 0){
 				 $index_active = "active";
 				 $nav_color_theme = "color-home";
 				 $footer_color_theme = "footer-color-home";
 				 }
-				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/council.php") == 0){
+				if(strcmp($page, "/council.php") == 0){
 				 $council_active = "active";
 				 $nav_color_theme = "color-council";
 				 $footer_color_theme = "footer-color-council";
 				 
 				 }
-				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/gallery.php") == 0){
+				if(strcmp($page, "/gallery.php") == 0){
 				 $gallery_active = "active";
 				 $nav_color_theme = "color-gallery";
 				 $footer_color_theme = "footer-color-gallery";
 				 }
-				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/events.php") == 0){
+				if(strcmp($page, "/events.php") == 0){
 				 $events_active = "active";
 				 $nav_color_theme = "color-events";
 				 $footer_color_theme = "footer-color-events";
 				 }
-				if(strcmp($page, "/bvpcsi master/bvpcsi/public_html/login.php") == 0){
+				if(strcmp($page, "/login.php") == 0){
 				 $login_active = "active";
 				 $nav_color_theme = "color-login";
 				 $footer_color_theme = "footer-color-home";
+				 }
+				if(strcmp($page, "/contactus.php") == 0){
+				 $contactus_active = "active";
+				 $nav_color_theme = "color-contactus";
+				 $footer_color_theme = "footer-color-contactus";
 				 }
 				?>
 				<ul class="nav navbar-nav <?php echo $nav_color_theme?>">
@@ -86,7 +92,7 @@
 					<li class="<?php echo $council_active?>"><a href="council.php">COUNCIL</a></li>
 					<li class="<?php echo $gallery_active?>"><a href="gallery.php">GALLERY</a></li>
 					<li class="<?php echo $events_active?>"><a href="events.php">EVENTS</a></li>
-					<li><a href="#">BLOG</a></li>
+					<li class="<?php echo $contactus_active?>"><a href="contactus.php">CONTACT US</a></li>
 					<li class="social pull-right <?php echo $login_active?>"><a href="login.php">LOGIN</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->

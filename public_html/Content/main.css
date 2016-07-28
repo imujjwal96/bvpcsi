@@ -99,6 +99,9 @@ ul.social-buttons li a:active {
 .color-events>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
   border-color: #33dc86;
 }
+.color-contactus>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
+  border-color: #3fbf90;
+}
 .footer-color-home{
   background-color:#000e1b; 
 }
@@ -110,6 +113,9 @@ ul.social-buttons li a:active {
 }
 .footer-color-events{
   background-color:#33dc86; 
+}
+.footer-color-contactus{
+  background-color:#3fbf90; 
 }
 .navbar-nav {
   width: 100%;
@@ -148,6 +154,21 @@ padding: 0px 16px;
   border-bottom-color: #686868;
   border-bottom-style: solid;
 
+}
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.7);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,0.7);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,0.7);  
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255,255,255,0.7);  
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: #515151;
@@ -218,10 +239,11 @@ font-family: Roboto,sans-serif;
 .input_text_new{
     border: 0;
     border-radius: 0;
+	
     border-bottom: 1px solid rgba(255,255,255,0.7);
     background: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     padding: 7px 0;
     width: 100%;
 }

@@ -8,7 +8,7 @@
 	</div>
 	</div>
 </div>
-<div class = "container margin-top-20">
+<div class = "container-fluid" style="padding-top:20px">
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
