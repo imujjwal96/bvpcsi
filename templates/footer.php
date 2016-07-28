@@ -74,5 +74,64 @@
 		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1662670077349303";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+	var map;
+	function initMap() {
+		var styles = [
+			{
+				stylers: [
+					{ hue: '#00ffe6' },
+					{ saturation: -20 }
+				]
+			},{
+				featureType: 'road',
+				elementType: 'geometry',
+				stylers: [
+					{ lightness: 100 },
+					{ visibility: 'simplified' }
+				]
+			},{
+				featureType: 'road',
+				elementType: 'labels',
+				stylers: [
+					{ visibility: 'off' }
+				]
+			}
+		];
+
+		// Create a new StyledMapType object, passing it the array of styles,
+		// as well as the name to be displayed on the map type control.
+		var styledMap = new google.maps.StyledMapType(styles,
+			{name: "Styled Map"});
+
+		// Create a map object, and include the MapTypeId to add
+		// to the map type control.
+		var mapOptions = {
+			zoom: 18,
+			scrollwheel: false,
+			center: new google.maps.LatLng(28.675913, 77.1131908),
+			mapTypeControlOptions: {
+				mapTypeIds: ['roadmap', 'map_style']
+			}
+		};
+		var map = new google.maps.Map(document.getElementById('map'),
+			mapOptions);
+
+		var marker = new google.maps.Marker({
+			map: map,
+			position: {lat: 28.675913, lng: 77.1131908},
+		});
+
+		//Associate the styled map with the MapTypeId and set it to display.
+		map.mapTypes.set('map_style', styledMap);
+		map.setMapTypeId('map_style');
+
+
+
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZNe-9BMn0bLUuEjJCM3eSghJapBdnYvA&callback=initMap"
+		async defer></script>
+
 </body>
 </html>

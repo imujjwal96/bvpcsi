@@ -27,13 +27,6 @@
 	</div>
 	</div>
 	
-	<div class="container-fluid text-col">
-	<div class="row">
-	<div class="col-md-12 text-box center" style="color: #515151">
-	<h1> Play More</h1>
-	</div>
-	<div class="col-md-12 text-box center" style="color: #515151">
-	<h4> Enjoy the company of people with diversities in thinking as well as vision</h4>	
-	</div>
-	</div>
+	<div class="container-fluid text-col" style="padding: 0;">
+			<div id="map" style="height: 400px"></div>
 	</div>
