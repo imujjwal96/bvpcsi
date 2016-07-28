@@ -3,23 +3,24 @@
 				$page = $_SERVER["PHP_SELF"];
 			
 				$footer_color_theme = "";
-				
-				if(strcmp($page, "/index.php") == 0){
+				//echo $page;
+				$temp = "";
+				if(strcmp($page, $temp."/index.php") == 0){
 				 $footer_color_theme = "footer-color-home";
 				 }
-				if(strcmp($page, "/council.php") == 0){
+				if(strcmp($page,$temp."/council.php") == 0){
 				 $footer_color_theme = "footer-color-council"; 
 				 }
-				if(strcmp($page, "/gallery.php") == 0){
+				if(strcmp($page, $temp."/gallery.php") == 0){
 				 $footer_color_theme = "footer-color-gallery";
 				 }
-				if(strcmp($page, "/events.php") == 0){
+				if(strcmp($page, $temp."/events.php") == 0){
 				 $footer_color_theme = "footer-color-events";
 				 }
-				if(strcmp($page, "/login.php") == 0){
+				if(strcmp($page, $temp."/login.php") == 0){
 				 $footer_color_theme = "footer-color-home";
 				 }
-				if(strcmp($page, "/contactus.php") == 0){
+				if(strcmp($page, $temp."/contactus.php") == 0){
 				 $footer_color_theme = "footer-color-contactus";
 				 }
 				
@@ -47,7 +48,7 @@
 	</div>
 	<div class="col-md-6">
 	<div class="row">
-	<div class="col-md-6  text-box" style="color: #FFF">
+	<div class="col-md-6 text-box" style="color: #FFF">
 	<h5>Connect Us</h5>
 	</div>
 	</div>
@@ -58,8 +59,25 @@
 	<a href="https://www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
 	</div>	
 	</div>
+	
+	<div class="row text-box" >
+	<button type="button" class="input_btn_new" data-toggle="modal" data-target=".bd-example-modal-sm">Fb Feed</button>
+	</div>
+	
 	</div>
 	</div>
+	
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+	<div class="fb-page" data-width="500" data-height="400" data-href="https://www.facebook.com/bvcoecsi" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bvcoecsi" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bvcoecsi">BVP CSI</a></blockquote></div>
+	
+
+    </div>
+  </div>
+</div>
+
+
 
 	<div class="container-fluid footer" style="background-color: #fff;">
 	<div class="row">
