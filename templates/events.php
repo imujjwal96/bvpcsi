@@ -2,7 +2,7 @@
 <div class="container-fluid text-col" style="background-color: #ff4242;">
 	<div class="row">
 	<div class="col-md-6 text-box" style="color: #fff">	
-	<h1>Technical & Cultural Events</h1>
+	<h1><?= $title; ?></h1>
 	</div>
 	<div class="col-md-6 text-box" style="color: #fff">
 	<h3>We are pretty active in hosting events and encouraging students to participate in those events</h3>

@@ -3,6 +3,6 @@
     // configuration
     require("../includes/config.php"); 
     
-    render("council.php");
+    render("council.php", ["title" => "Council"]);
 
 ?>

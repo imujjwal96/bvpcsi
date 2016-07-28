@@ -3,6 +3,6 @@
     // configuration
     require("../includes/config.php"); 
     
-    render("gallery.php");
+    render("gallery.php", ["title" => "Gallery"]);
 
 ?>
