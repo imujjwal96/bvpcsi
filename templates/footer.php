@@ -4,7 +4,7 @@
 			
 				$footer_color_theme = "";
 				//echo $page;
-				$temp = "";
+				$temp = "/bvpcsi master/bvpcsi/public_html";
 				if(strcmp($page, $temp."/index.php") == 0){
 				 $footer_color_theme = "footer-color-home";
 				 }
@@ -18,7 +18,7 @@
 				 $footer_color_theme = "footer-color-events";
 				 }
 				if(strcmp($page, $temp."/login.php") == 0){
-				 $footer_color_theme = "footer-color-home";
+				 $footer_color_theme = "footer-color-login";
 				 }
 				if(strcmp($page, $temp."/contactus.php") == 0){
 				 $footer_color_theme = "footer-color-contactus";
@@ -171,5 +171,11 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZNe-9BMn0bLUuEjJCM3eSghJapBdnYvA&callback=initMap"
 		async defer></script>
 
+<script>
+$('.message a').click(function(e){
+	e.preventDefault();
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
 </body>
 </html>

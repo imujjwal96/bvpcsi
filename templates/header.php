@@ -1,5 +1,48 @@
 <!DOCTYPE HTML>
 <html>
+<?php
+				$page = $_SERVER["PHP_SELF"];
+				$index_active = "";
+				$events_active = "";
+				$council_active = "";
+				$gallery_active = "";
+				$login_active = "";
+				$nav_color_theme = "";
+                $footer_color_theme = "";
+				$temp = "/bvpcsi master/bvpcsi/public_html";
+				
+				if(strcmp($page, $temp."/index.php") == 0){
+				 $index_active = "active";
+				 $nav_color_theme = "color-home";
+				 $footer_color_theme = "footer-color-home";
+				 }
+				if(strcmp($page, $temp."/council.php") == 0){
+				 $council_active = "active";
+				 $nav_color_theme = "color-council";
+				 $footer_color_theme = "footer-color-council";
+				 
+				 }
+				if(strcmp($page, $temp."/gallery.php") == 0){
+				 $gallery_active = "active";
+				 $nav_color_theme = "color-gallery";
+				 $footer_color_theme = "footer-color-gallery";
+				 }
+				if(strcmp($page, $temp."/events.php") == 0){
+				 $events_active = "active";
+				 $nav_color_theme = "color-events";
+				 $footer_color_theme = "footer-color-events";
+				 }
+				if(strcmp($page, $temp."/login.php") == 0){
+				 $login_active = "active";
+				 $nav_color_theme = "color-login";
+				 $footer_color_theme = "footer-color-login";
+				 }
+				if(strcmp($page, $temp."/contactus.php") == 0){
+				 $contactus_active = "active";
+				 $nav_color_theme = "color-contactus";
+				 $footer_color_theme = "footer-color-contactus";
+				 }
+				?>
 <head>
 	<title><?php if (isset($title)) echo  $title . ' | '; ?> BVPCSI</title>
 	<meta charset = "utf-8">
@@ -45,48 +88,7 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<?php
-				$page = $_SERVER["PHP_SELF"];
-				$index_active = "";
-				$events_active = "";
-				$council_active = "";
-				$gallery_active = "";
-				$login_active = "";
-				$nav_color_theme = "";
-                $footer_color_theme = "";
-			
-				if(strcmp($page, "/index.php") == 0){
-				 $index_active = "active";
-				 $nav_color_theme = "color-home";
-				 $footer_color_theme = "footer-color-home";
-				 }
-				if(strcmp($page, "/council.php") == 0){
-				 $council_active = "active";
-				 $nav_color_theme = "color-council";
-				 $footer_color_theme = "footer-color-council";
-				 
-				 }
-				if(strcmp($page, "/gallery.php") == 0){
-				 $gallery_active = "active";
-				 $nav_color_theme = "color-gallery";
-				 $footer_color_theme = "footer-color-gallery";
-				 }
-				if(strcmp($page, "/events.php") == 0){
-				 $events_active = "active";
-				 $nav_color_theme = "color-events";
-				 $footer_color_theme = "footer-color-events";
-				 }
-				if(strcmp($page, "/login.php") == 0){
-				 $login_active = "active";
-				 $nav_color_theme = "color-login";
-				 $footer_color_theme = "footer-color-home";
-				 }
-				if(strcmp($page, "/contactus.php") == 0){
-				 $contactus_active = "active";
-				 $nav_color_theme = "color-contactus";
-				 $footer_color_theme = "footer-color-contactus";
-				 }
-				?>
+				
 				<ul class="nav navbar-nav <?php echo $nav_color_theme?>">
 					<li class="pull-left <?php echo $index_active?>"><a href="index.php">HOME</a></li>
 					<li class="<?php echo $council_active?>"><a href="council.php">COUNCIL</a></li>
