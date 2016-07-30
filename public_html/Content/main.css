@@ -97,7 +97,7 @@ ul.social-buttons li a:active {
   border-color: #ffbc00;
 }
 .color-events>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
-  border-color: #33dc86;
+  border-color: #7189ff;
 }
 .color-contactus>.active>a,.color-home>.active>a:hover,.color-home>.active>a:focus {
   border-color: #3fbf90;
@@ -115,7 +115,7 @@ ul.social-buttons li a:active {
   background-color:#ffbc00; 
 }
 .footer-color-events{
-  background-color:#33dc86; 
+  background-color:#7189ff; 
 }
 .footer-color-contactus{
   background-color:#3fbf90; 
@@ -403,7 +403,7 @@ margin: 0px 10px;
   width: 100%;
   text-align: left;
 	}
-.navbar-nav > li {
+.navbar-nav > li { 
   float: none;
   display:block;
   padding: 12px;

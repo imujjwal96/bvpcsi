@@ -1,5 +1,5 @@
 <!-- Content Wrapper Start -->
-<div class="container-fluid text-col" style="background-color: #ff4242;">
+<div class="container-fluid text-col" style="background-color: #7189ff;">
 	<div class="row">
 	<div class="col-md-6 text-box" style="color: #fff">	
 	<h1><?= $title; ?></h1>

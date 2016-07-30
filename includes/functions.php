@@ -53,10 +53,35 @@
     ************************************************************/
     function render($template, $values = [])
     {
+		//echo "<script>console.log(\"".$template."\");</script>";
+		
         // Checking the file of the template exists
         if (file_exists("../templates/$template"))
         {
-            // extract variables into local scope
+			// ******************************************************
+			
+			// Check It @ujjwal
+			
+			//*******************************************************
+			
+			if($template == "dashboard.php"){
+				// extract variables into local scope
+            extract($values);
+
+            // Include the header
+            require("../templates/dashheader.php");
+
+            // Include the template
+            require("../templates/$template");
+
+            // Includet the footer
+            require("../templates/dashfooter.php");
+			}
+			
+			// ************************************************
+			
+			else{
+			// extract variables into local scope
             extract($values);
 
             // Include the header
@@ -66,7 +91,7 @@
             require("../templates/$template");
 
             // Includet the footer
-            require("../templates/footer.php");
+				require("../templates/footer.php");}
         }
 
         // else show an error (temp)

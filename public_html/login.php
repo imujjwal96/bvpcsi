@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 } else if($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $password = htmlspecialchars($_POST["password"]);
-    if(!empty(email) && !empty($password)) {
+    if(!empty($email) && !empty($password)) {
         $pass_hash = md5($password);
         $result = query("SELECT * FROM info WHERE email = ? AND password = ?", $email, $pass_hash);
         if(count($result) == 0) {
@@ -17,7 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         }
         else {
             $_SESSION["id"] = $result[0]["id"];
-            redirect("/");
+			redirect("/dashboard.php");
+           // header("Location:dashboard.php");
         }
     }
     else {

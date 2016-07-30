@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                     $pass_hash = md5($password);
                     $query_ins = query("INSERT INTO `info` (id, name, email, password) VALUES
                         (NULL, ?, ?, ?)", $name, $email, $pass_hash);
-                    redirect("/login.php");
+                    redirect("./login.php");
                 }
             }
         }
