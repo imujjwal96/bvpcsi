@@ -7,9 +7,9 @@
 	-->
 
     	<div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    BVPCSI
+            <div class="logo" style="padding: 11px 0px;">
+                <a href="http://www.bvpcsi.in" class="simple-text">
+                    <img src="img/New-Logo.png" style="height: 45px;opacity: 0.8;"/>
                 </a>
             </div>
 

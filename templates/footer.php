@@ -54,14 +54,14 @@
 	</div>
 	<div class="row">
 	<div class="col-md-12 connect-box" style="color: #FFF">
-	<a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-	<a href="https://www.plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-	<a href="https://www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+	<a href="https://www.facebook.com/bvcoecsi"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	<!--<a href="https://www.plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>-->
+	<a href="https://www.github.com/imujjwal96/bvpcsi/"><i class="fa fa-github" aria-hidden="true"></i></a>
 	</div>	
 	</div>
 	
 	<div class="row text-box" >
-	<button type="button" class="input_btn_new" data-toggle="modal" data-target=".bd-example-modal-sm">Fb Feed</button>
+	<button type="button" class="input_btn_new" data-toggle="modal" data-target=".bd-example-modal-sm">Facebook Feed</button>
 	</div>
 	
 	</div>
@@ -82,7 +82,7 @@
 	<div class="container-fluid footer" style="background-color: #fff;">
 	<div class="row">
 	
-	<a href="http://www.bvpcsi.in"><img src="img/bvpcsilogo-black.png" style="height:10vh" /></a>
+	<a href="http://www.bvpcsi.in"><img src="img/New-Logo.png" class="footer-logo" /></a>
 	<span style="float: right;padding: 20px 0px;">Made with <i class="fa fa-heart" aria-hidden="true" style="color: #FF2D50"></i> by <a href = "https://github.com/imujjwal96/bvpcsi/graphs/contributors" target="_blank">Team</a></span>
 	</div>
 	</div>

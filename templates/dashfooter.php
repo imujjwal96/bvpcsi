@@ -39,7 +39,7 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
     <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-	<script src="Scipts/paper-dashboard.js"></script>
+	<script src="Scripts/paper-dashboard.js"></script>
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="Scripts/demo.js"></script>

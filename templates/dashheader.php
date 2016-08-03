@@ -16,6 +16,7 @@
 	<meta property="og:description" content="BVPCSI" />
 	<meta property="og:image" content="http://www.bvpcsi.in/img/logo.png" />
 	<meta name="theme-color" content="#001c32" />
+	<link rel="shortcut icon" href="img/favicon-32x32.png" />
 	<!-- Bootstrap core CSS     -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 

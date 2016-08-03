@@ -61,7 +61,7 @@
 	<meta name="theme-color" content="#001c32" />
 	<link href="Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="Content/main.css" rel="stylesheet" />
-	<link rel="shortcut icon" href="img/csi.png" />
+	<link rel="shortcut icon" href="img/favicon-32x32.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -77,6 +77,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src="img/New-Logo.png" style="height:6vh;margin-top:-8px;opacity:0.8;"/></a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
